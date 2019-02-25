@@ -1,0 +1,2271 @@
+@import "_variabls.sass"
+@import "_mixin.sass"
+@import url('https://fonts.googleapis.com/css?family=Cousine:400,700')
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:300i,400,400i,700,700i,800')
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic')
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700')
+@font-face
+  font-family: "Verdana"
+  src: url('../font/Verdana.eot')
+  font-weight: normal
+  font-style: normal
+@font-face
+  font-family: 'Arial'
+  src: url('../font/Arial-Black.eot')
+  font-weight: 900
+  font-style: normal
+@font-face
+  font-family: 'Arial'
+  src: url('../font/Arial-BoldMT.eot')
+  font-weight: bold
+  font-style: normal
+@font-face
+  font-family: 'Arial'
+  src: url('../font/ArialMT.eot')
+  font-weight: normal
+  font-style: normal
+@font-face
+  font-family: 'Trebuchet MS'
+  src: url('../font/TrebuchetMS.eot')
+  font-weight: normal
+  font-style: normal
+
+*
+  margin: 0 auto
+  padding: 0
+  text-decoration: none
+
+body
+  max-width: 1928px
+
+  header
+    width: 100%
+    min-height: 130px
+    .header-up
+      max-width: 1170px
+      min-height: 27px
+      display: flex
+      justify-content: space-between
+      background-color: #f6f6f6
+      .header-side-wrap
+        display: flex
+        justify-content: space-between
+        width: 100%
+        .left-side
+          margin: 0
+          display: flex
+          justify-content: space-between
+          align-items: center
+          width: 55%
+          .left-side-text
+            color: #7e7e7e
+            font-family: sans-serif
+            font-size: 11px
+            font-weight: 400
+            text-transform: uppercase
+            text-decoration: none
+            opacity: 0.5
+          .left-side-text:hover
+            opacity: 1
+          .left-side-text__visibility
+            opacity: 0
+      .right-side
+        margin: 0
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 30%
+        .title-wrap
+          .title, .title-us, .title-language
+            color: #7e7e7e
+            font-family: $font-Merriweather
+            font-size: 11px
+            font-weight: 400
+            line-height: 19px
+            text-transform: uppercase
+          .title-us, .title-language
+            position: relative
+            z-index: 2
+          .title-us:after
+            content: ""
+            width: 7px
+            height: 4px
+            background: url("../img/icon/drop.svg") no-repeat
+            background-size: 7px
+            position: absolute
+            right: -10px
+            top: 4px
+            z-index: 2
+          .title-language:after
+            content: ""
+            width: 7px
+            height: 4px
+            background: url("../img/icon/drop.svg") no-repeat
+            background-size: 7px
+            position: absolute
+            right: -10px
+            top: 4px
+            z-index: 2
+      .choose-currency-wrap
+        position: relative
+        .choose-currency
+          position: absolute
+          display: none
+          span
+            color: #7e7e7e
+            font-family: $font-Merriweather
+            font-size: 11px
+            font-weight: 400
+            line-height: 19px
+            text-transform: uppercase
+            margin: 0
+      .choose-currency-wrap:hover .choose-currency
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        z-index: 1
+        padding: 26px 11px 15px 11px
+        background: #ffffff
+        width: 68px
+        top: -3px
+        left: -10px
+        border: 1px solid #bbbbbb
+      .choose-language-wrap
+        position: relative
+        .choose-language
+          position: absolute
+          display: none
+          span
+            color: #7e7e7e
+            font-family: $font-Merriweather
+            font-size: 11px
+            font-weight: 400
+            line-height: 19px
+            text-transform: uppercase
+            margin: 0
+            position: relative
+        .gb_language:before
+          z-index: 2
+          content: ''
+          width: 14px
+          height: 11px
+          background: url("../img/flag/gb__.png")
+          background-size: 14px
+          position: absolute
+          left: -20px
+          top: 1px
+        .it_language:before
+          z-index: 2
+          content: ''
+          width: 14px
+          height: 11px
+          background: url("../img/flag/it.png")
+          background-size: 14px
+          position: absolute
+          left: -20px
+          top: 3px
+        .es_language:before
+          z-index: 2
+          content: ''
+          width: 14px
+          height: 11px
+          background: url("../img/flag/es.png")
+          background-size: 14px
+          position: absolute
+          left: -20px
+          top: 3px
+        .fr_language:before
+          z-index: 2
+          content: ''
+          width: 14px
+          height: 11px
+          background: url("../img/flag/fr.png")
+          background-size: 14px
+          position: absolute
+          left: -20px
+          top: 3px
+        .de_language:before
+          z-index: 2
+          content: ''
+          width: 14px
+          height: 11px
+          background: url("../img/flag/de.png")
+          background-size: 14px
+          position: absolute
+          left: -20px
+          top: 3px
+      .choose-language-wrap:hover .choose-language
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        z-index: 1
+        padding: 26px 4px 15px 24px
+        background: #ffffff
+        width: 68px
+        top: -3px
+        left: -27px
+        border: 1px solid #bbbbbb
+      .choose-language-wrap:before
+        z-index: 3
+        content: ''
+        width: 14px
+        height: 14px
+        background: #f6f6f6
+        position: absolute
+        left: -20px
+        top: 2px
+      .choose-language-wrap:hover:before
+        z-index: 0
+      .right-side-mybag-wrap
+        position: relative
+        padding: 2px 9.4px
+        .my-bag-wrap
+          position: absolute
+          background: white
+          padding: 0 20px 20px 20px
+          flex-direction: column
+          z-index: 1
+          border: 1px solid #bbbbbb
+          left: -185px
+          display: none
+          .added-item
+            margin: 0
+            padding: 20px 0 16px 0
+            color: #7b7b7b
+            font-family: $font-ArialMT
+            font-size: 14px
+            font-weight: 400
+            position: relative
+          .added-item:after
+            position: absolute
+            content: ""
+            width: 122px
+            height: 7px
+            background: white
+            background-size: 100px
+            top: -6px
+            left: 164px
+          .product-mybag
+            display: flex
+            justify-content: space-around
+            margin-bottom: 20px
+            width: 266px
+            .product-mybag-text
+              display: flex
+              flex-direction: column
+              padding: 0 22px 0 10px
+              color: #444444
+              font-family: $font-Merriweather
+              font-size: 13px
+              font-weight: 400
+              line-height: 17px
+              text-decoration: none
+              span
+                color: #444444
+            .product-mybag-delet-wrap
+              position: relative
+              width: 18px
+              height: 32px
+              .product-mybag-delet:before
+                content: url("../img/icon/delit_wite.svg")
+                width: 18px
+                height: 32px
+                position: absolute
+                background: white
+                background-size: 32px
+              .product-mybag-delet:after
+                content: url("../img/icon/delet_act.png")
+                width: 18px
+                height: 32px
+                position: absolute
+                z-index: -1
+            .product-mybag-delet-wrap:hover .product-mybag-delet:after
+              z-index: 1
+            .product-prise-wrap
+              display: flex
+              margin: 0
+              .prise
+                color: #222222
+                font-family: $font-Cousine
+                font-size: 14px
+                font-weight: 700
+                margin: 0
+              .seil-pise
+                color: #999999
+                font-family: $font-Cousine
+                font-size: 14px
+                font-weight: 700
+                text-decoration: line-through
+                margin: 0
+                padding-right: 8px
+        .prise-total-wrap
+          display: flex
+          justify-content: space-between
+          margin: 0
+          p
+            color: #666666
+            font-family: $font-Cousine
+            font-size: 13px
+            font-weight: 700
+            text-transform: uppercase
+            margin: 0
+            span
+              color: #222222
+              font-family: $font-Cousine
+              font-size: 15px
+              font-weight: 700
+        .button-site
+          display: flex
+          color: #444444
+          font-family: $font-Merriweather
+          font-size: 13px
+          font-weight: 700
+          text-transform: uppercase
+        .my-bag-button
+          padding: 10px 0
+          margin-top: 11px
+          .my-bag-button-cart
+            border: #444444 solid 1px
+            padding: 10px 48px
+            border-right: none
+            color: #444444
+          .my-bag-button-cart:hover
+            color: #cf4647
+          .my-bag-button-checkout
+            border: #444444 solid 1px
+            border-left: none
+            padding: 10px 29px
+            color: #444444
+            position: relative
+          .my-bag-button-checkout:hover
+            color: #cf4647
+          .my-bag-button-checkout:before
+            content: url("../img/my-bag/raz.png")
+            width: 2px
+            height: 16px
+            position: absolute
+            left: -1px
+      .right-side-mybag-wrap:hover
+        border: 1px solid #bbbbbb
+        border-bottom: none
+        background: white
+      .right-side-mybag-wrap:hover .my-bag-wrap
+        display: flex
+
+    .header-down
+      max-width: 1170px
+      min-height: 103px
+      display: flex
+      justify-content: space-between
+      position: relative
+      .header-side-wrap
+        display: flex
+        justify-content: space-between
+        width: 100%
+        padding: 0 20px
+        .left-side
+          margin: 0
+          display: flex
+          align-items: flex-end
+          .logo-wrap
+            display: block
+            text-decoration: none
+            .logo-text
+              color: #454545
+              font-family: $font-Merriweather
+              font-size: 44px
+              font-weight: 700
+              text-transform: uppercase
+          .logo-wrap:hover .logo-text
+            color: #cf4647
+
+        .right-side__column
+          margin: 0
+          display: flex
+          flex-direction: column
+          justify-content: space-around
+          align-items: flex-end
+          width: 60%
+          height: 100%
+          .row-up
+            display: flex
+            flex-direction: row
+            justify-content: flex-end
+            .input-find
+              width: 260px
+              height: 32px
+              border: 1px solid #e1e1e1
+              background-color: #ffffff
+              position: relative
+              box-sizing: border-box
+              padding: 0 11px
+              margin: 0
+            .button-find
+              width: 32px
+              height: 32px
+              position: absolute
+              border: none
+              background: none
+              margin: 0
+            .button-find:before
+              content: ''
+              width: 16px
+              height: 16px
+              background: url("../img/icon/search_icon.svg")
+              background-size: 16px
+              position: absolute
+              right: 8px
+              top: 8px
+          .row-down
+            display: flex
+            flex-direction: row
+            width: 95.7%
+            a
+              color: #565656
+              font-family: $font-Cousine
+              font-size: 14px
+              font-weight: 700
+              text-transform: uppercase
+              height: 100%
+              display: flex
+              align-items: flex-end
+              margin-bottom: 7px
+          .row-down:hover .mega-menu
+            display: flex
+          .row-down a:hover
+            color: #cf4647
+          .fashion:hover .mega-menu
+            display: flex
+          .mega-menu
+            display: none
+            flex-direction: column
+            justify-content: space-around
+            position: absolute
+            width: 100%
+            left: 0
+            top: 104px
+            padding: 39px 50px 43px 50px
+            box-sizing: border-box
+            border: 1px solid #bbbbbb
+            z-index: 1
+            background-color: #ffffff
+
+            .mega-row-up
+              display: flex
+              flex-direction: row
+              margin: 0
+              justify-content: space-between
+              align-items: flex-end
+              .mega-menu-ctegori
+                display: flex
+                flex-direction: column
+                margin: 0
+                width: 100%
+                .mega-menu-ctegori a:hover
+                  color: #cf4647
+                .mega-menu-ctegori-name
+                  color: #555555
+                  font-family: $font-ArialMT
+                  font-size: 14px
+                  font-weight: 400
+                  line-height: 32px
+                  text-transform: uppercase
+                  position: relative
+                  margin: 0
+                a
+                  margin-left: 0
+                  color: #555555
+                  font-family: $font-ArialMT
+                  font-size: 14px
+                  font-weight: 400
+                  line-height: 32px
+                  text-transform: none
+              .mega-menu-ctegori-name:after
+                content: ""
+                width: 109px
+                height: 1px
+                position: absolute
+                background: white
+                border-bottom: #e4e4e4 1px solid
+                top: 19px
+                margin-left: 9px
+              .shoes:after
+                width: 136px
+              .accessories:after
+                width: 81px
+              .sport:after
+                max-width: 48%
+                width: 55%
+              .baner-last-wrap
+                position: relative
+                .baner-last
+                  display: block
+                  img
+                    position: absolute
+                    bottom: 0
+                    left: 0
+                  .baner-last-text
+                    position: absolute
+                    display: flex
+                    flex-direction: column
+                    bottom: 83px
+                    left: 24px
+                    p
+                      color: #ffffff
+                      font-family: $font-Merriweather
+                      font-size: 25px
+                      font-weight: 700
+                      line-height: 25px
+                      text-transform: uppercase
+                    span
+                      color: #ffffff
+                      font-family: $font-Roboto
+                      font-size: 20px
+                      font-weight: 700
+                      text-transform: uppercase
+
+                .baner-last-seil
+                  position: absolute
+                  bottom: 0
+                  left: 0
+                  display: none
+                  flex-direction: column
+                  justify-content: space-between
+                  width: 90%
+                  h2
+                    color: #666666
+                    font-family: $font-Cousine
+                    font-size: 15px
+                    font-weight: 700
+                    text-transform: uppercase
+                    margin-left: 0
+                    padding-bottom: 5px
+                  p
+                    color: #444444
+                    font-family: $font-Merriweather
+                    font-size: 12px
+                    font-weight: 400
+                    line-height: 18px
+                  .pale-pink
+                    padding-top: 4px
+                  .seil-pise
+                    color: #999999
+                    font-family: $font-Cousine
+                    font-size: 14px
+                    font-weight: 700
+                    line-height: 17px
+                    text-decoration: line-through
+                    margin-left: 6px
+                  .prise
+                    color: #222222
+                    font-family: $font-Cousine
+                    font-size: 14px
+                    font-weight: 700
+                    line-height: 17px
+                    margin-left: 20px
+                  .slider-seil-wrap
+                    width: 118px
+                    #slider input
+                      display: none
+                    .slider-wrap
+                      border: 1px solid #eaeaea
+                      background-color: #f7f7f7
+                    #slider
+                      margin: 0 auto
+                      height: 154px
+                      width: 100%
+                      background: #ffffff
+                      text-align: center
+                    #slides
+                      width: 101%
+                      position: relative
+                    #container
+                      height: 154px
+                      width: 99%
+                      overflow: hidden
+                      position: relative
+                    #slides .inner
+                      display: flex
+                      width: 153%
+                      line-height: 0
+                    #slides .slider-img
+                      width: 20%
+                      float: left
+                    .slider-img img
+                      width: 100%
+                    #commands
+                      margin: -42% 0 0 0
+                      width: 100%
+                      height: 50px
+                      position: relative
+                    #commands label
+                      width: 21px
+                      height: 21px
+                      opacity: 0.5
+                    #slide1:checked ~ #slides .inner
+                      margin-left: 0
+                    #slide2:checked ~ #slides .inner
+                      margin-left: -100%
+                    #slide3:checked ~ #slides .inner
+                      margin-left: -200%
+                    #slide4:checked ~ #slides .inner
+                      margin-left: -300%
+                    #slide5:checked ~ #slides .inner
+                      margin-left: -400%
+                    #slide1:checked ~ #commands label:nth-child(2),
+                    #slide2:checked ~ #commands label:nth-child(3),
+                    #slide3:checked ~ #commands label:nth-child(4),
+                    #slide4:checked ~ #commands label:nth-child(5),
+                    #slide5:checked ~ #commands label:nth-child(1)
+                      background: url("../img/mega-menu/slider/rightbuttom.png") no-repeat
+                      display: block
+                      position: absolute
+                      right: -36px
+                      top: -47px
+                    #slide1:checked ~ #commands label:nth-child(2):active,
+                    #slide2:checked ~ #commands label:nth-child(3):active,
+                    #slide3:checked ~ #commands label:nth-child(4):active,
+                    #slide4:checked ~ #commands label:nth-child(5):active,
+                    #slide5:checked ~ #commands label:nth-child(1):active
+                      background: url("../img/mega-menu/slider/rightbutton1.png") no-repeat
+                      display: block
+                      position: absolute
+                      right: -36px
+                      top: -47px
+                    #slide1:checked ~ #commands label:nth-child(5),
+                    #slide2:checked ~ #commands label:nth-child(1),
+                    #slide3:checked ~ #commands label:nth-child(2),
+                    #slide4:checked ~ #commands label:nth-child(3),
+                    #slide5:checked ~ #commands label:nth-child(4)
+                      background: url("../img/mega-menu/slider/leftbutton.png") no-repeat
+                      display: block
+                      position: absolute
+                      left: -36px
+                      top: -47px
+                    #slide1:checked ~ #commands label:nth-child(5):active,
+                    #slide2:checked ~ #commands label:nth-child(1):active,
+                    #slide3:checked ~ #commands label:nth-child(2):active,
+                    #slide4:checked ~ #commands label:nth-child(3):active,
+                    #slide5:checked ~ #commands label:nth-child(4):active
+                      background: url("../img/mega-menu/slider/leftbutton1.png") no-repeat
+                      display: block
+                      position: absolute
+                      left: -36px
+                      top: -47px
+              .baner-last-wrap:hover .baner-last
+                display: none
+              .baner-last-wrap:hover .baner-last-seil
+                display: flex
+
+            .mega-row-down
+              display: flex
+              flex-direction: row
+              flex-wrap: wrap
+              justify-content: space-between
+              margin: 0
+              padding-top: 60px
+              .baner-left-wrap
+                display: block
+                margin: 0
+                padding-bottom: 10px
+                .baner-left
+                  display: flex
+                  position: relative
+                  margin: 0
+                  .baner-left-text
+                    position: absolute
+                    color: #1b1b1b
+                    top: 20px
+                    right: 7px
+                    display: flex
+                    flex-direction: column
+                    .arrivals-baner-left
+                      font-family: $font-Roboto
+                      font-size: 20px
+                      font-weight: 700
+                      line-height: 32px
+                      text-transform: uppercase
+                    .for-psevdo
+                      font-family: $font-Merriweather
+                      font-size: 15px
+                      font-weight: 700
+                      font-style: italic
+                      line-height: 32px
+                      position: relative
+                    .for-psevdo:before
+                      content: url("../img/mega-menu/for.png")
+                      width: 45px
+                      height: 2px
+                      position: absolute
+                      right: 31px
+                      top: -5px
+                    .for-psevdo:after
+                      content: url("../img/mega-menu/for.png")
+                      width: 45px
+                      height: 2px
+                      position: absolute
+                      left: 30px
+                      top: -5px
+                    .babies-baner-lef
+                      font-family: $font-Merriweather
+                      font-size: 34px
+                      font-weight: 400
+                      line-height: 32px
+                      text-transform: uppercase
+              .baner-center-wrap
+                display: block
+                margin: 0
+                padding-bottom: 10px
+                .baner-center
+                  display: flex
+                  justify-content: center
+                  align-items: center
+                  position: relative
+                  margin: 0
+                  .baner-center-text
+                    position: absolute
+                    .designer-baner-center
+                      color: #ffffff
+                      font-family: $font-Roboto
+                      font-size: 35px
+                      font-weight: 700
+                      line-height: 32px
+                      text-transform: uppercase
+              .baner-right-wrap
+                display: block
+                margin: 0
+                .baner-right
+                  display: flex
+                  position: relative
+                  margin: 0
+                  .baner-right-text
+                    position: absolute
+                    display: flex
+                    flex-direction: column
+                    left: 45px
+                    top: 21px
+                    .bags-baner-right
+                      color: #ffffff
+                      font-family: $font-Merriweather
+                      font-size: 36px
+                      font-weight: 400
+                      line-height: 32px
+                      text-transform: uppercase
+                    .baner-right-30
+                      color: #ffffff
+                      font-family: $font-Roboto
+                      font-size: 28px
+                      font-weight: 700
+                      line-height: 32px
+                      text-transform: uppercase
+                    .under-baner-right
+                      color: #ffffff
+                      font-family: $font-Roboto
+                      font-size: 29px
+                      font-weight: 700
+                      line-height: 32px
+                      text-transform: uppercase
+  .full-baner
+    width: 100%
+    .full-baner-slider
+      max-width: 1920px
+      #slider-full input
+        display: none
+      #slider-full
+        margin: 0 auto
+        width: 100%
+        background: #ffffff
+        text-align: center
+      #full-slides
+        width: 100%
+        position: relative
+      #full-container
+        width: 100%
+        overflow: hidden
+        position: relative
+        .inner-full
+          max-height: 1070px
+      #full-slides .inner-full
+        display: flex
+        width: 300%
+        line-height: 0
+
+      .full-slider-img1 img
+        width: 100%
+
+      .full-slider-img1
+
+        .slider-img1
+          position: relative
+        .full-slider-text1
+          display: none
+          position: absolute
+          width: 18%
+          height: 30%
+          right: 22%
+          top: 30%
+          text-align: left
+          -webkit-animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both
+          animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both
+          .text1-check
+            color: #555555
+            font-family: "Cousine", sans-serif
+            font-size: 1.4vw
+            font-weight: 700
+            line-height: 1.4vw
+            text-transform: uppercase
+          .text1-autumn
+            text-shadow: 0 0 2px rgba(0, 0, 0, 0.05)
+            color: #ffffff
+            font-family: "Merriweather Sans", sans-serif
+            font-size: 4vw
+            font-weight: 400
+            line-height: 4vw
+            text-transform: uppercase
+          .text1-trends
+            color: #4c4c4c
+            font-family: "Roboto Condensed", sans-serif
+            font-size: 1.4vw
+            font-weight: 700
+            line-height: 1.4vw
+            text-transform: uppercase
+          .text1-read
+            color: #333333
+            font-family: $font-Merriweather
+            font-size: 0.7vw
+            font-weight: 700
+            line-height: 4vw
+            text-transform: uppercase
+            position: relative
+          .text1-read:hover
+            color: #cf4647
+      .full-slider-img2 img
+        width: 100%
+        position: relative
+      .full-slider-img2
+        .full-slider-text2
+          display: none
+          opacity: 0
+          position: absolute
+          width: 50%
+          left: 14%
+          top: 37%
+          text-align: left
+          -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both
+          animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both
+          .text2-the
+            color: #777777
+            font-family: $font-Roboto
+            font-size: 2.7vw
+            font-weight: 700
+            line-height: 2vw
+            text-transform: uppercase
+          .text2-sale
+            color: #373737
+            font-family: $font-Merriweather
+            font-size: 11vw
+            font-weight: 400
+            line-height: 11vw
+            text-transform: uppercase
+          .text2-final
+            color: #a7c5bd
+            font-family: $font-Roboto
+            font-size: 3.5vw
+            font-weight: 700
+            line-height: 2vw
+            text-transform: uppercase
+            position: relative
+            width: max-content
+            margin: 0
+          .text2-final:before
+            position: absolute
+            content: ""
+            left: 0
+            top: -21px
+            width: 100%
+            height: 2px
+            border: #a7c5bd 2px solid
+            background: #a7c5bd
+          .text2-final:after
+            position: absolute
+            content: ""
+            left: 0
+            bottom: -19px
+            width: 100%
+            height: 2px
+            border: #a7c5bd 2px solid
+            background: #a7c5bd
+          .text2-uptu
+            font-family: $font-ArialBlack
+            font-size: 2.7vw
+            font-weight: 400
+            line-height: 4.5vw
+            text-transform: uppercase
+            letter-spacing: 0.17vw
+          .text2-items
+            color: #777777
+            font-family: $font-Merriweather
+            font-size: 1.52vw
+            font-weight: 400
+            line-height: 0.1vw
+            text-transform: uppercase
+          .text2-shopnow
+            color: #333333
+            font-family: $font-Merriweather
+            font-size: 0.7vw
+            font-weight: 700
+            line-height: 4vw
+            text-transform: uppercase
+          .text2-shopnow:hover
+            color: #cf4647
+      .full-slider-img3 img
+        width: 100%
+      .full-slider-img3
+        .full-slider-text3
+          display: none
+          position: absolute
+          width: 50%
+          left: 26%
+          top: 37%
+          text-align: center
+          border: 1px solid rgba(255, 255, 255, 0.3)
+          padding: 75px 0
+          -webkit-animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both
+          animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both
+          .text3-youpay
+            color: #454545
+            font-family: $font-Merriweather
+            font-size: 3.97vw
+            font-weight: 400
+            line-height: 2vw
+            letter-spacing: 3px
+            text-transform: uppercase
+            margin-top: 20px
+          .text3-everyone
+            color: #454545
+            font-family: $font-Roboto
+            font-size: 2vw
+            font-weight: 700
+            line-height: 3vw
+            text-transform: uppercase
+          .text3-ivamus
+            color: #454545
+            font-family: $font-Cousine
+            font-size: 0.64vw
+            font-weight: 700
+            line-height: 0.8vw
+            text-transform: uppercase
+            display: block
+            width: 51%
+          .text3-discount
+            color: #454545
+            font-family: $font-Merriweather
+            font-size: 0.7vw
+            font-weight: 700
+            line-height: 2vw
+            text-transform: uppercase
+          .text3-discount:hover
+            color: #cf4647
+
+      #full-commands
+        width: 100%
+        position: relative
+        margin: -29% 0 0 0
+      #full-commands label
+        width: 70px
+        height: 70px
+        opacity: 0.8
+      #full-slide1:checked ~ #full-slides .inner-full
+        margin-left: 0
+        transition: 2s
+      #full-slide1:checked ~ #full-slides .full-slider-text1
+        display: block
+        transition: 2s
+        @-webkit-keyframes focus-in-expand-fwd
+          0%
+            letter-spacing: -0.5em
+            -webkit-transform: translateZ(-800px)
+            transform: translateZ(-800px)
+            -webkit-filter: blur(12px)
+            filter: blur(12px)
+            opacity: 0
+          100%
+            -webkit-transform: translateZ(0)
+            transform: translateZ(0)
+            -webkit-filter: blur(0)
+            filter: blur(0)
+            opacity: 1
+        @keyframes focus-in-expand-fwd
+          0%
+            letter-spacing: -0.5em
+            -webkit-transform: translateZ(-800px)
+            transform: translateZ(-800px)
+            -webkit-filter: blur(12px)
+            filter: blur(12px)
+            opacity: 0
+          100%
+            -webkit-transform: translateZ(0)
+            transform: translateZ(0)
+            -webkit-filter: blur(0)
+            filter: blur(0)
+            opacity: 1
+      #full-slide2:checked ~ #full-slides .inner-full
+        margin-left: -100%
+        transition: 2s
+      #full-slide2:checked ~ #full-slides .full-slider-text2
+        display: block
+        transition: 2s
+        @-webkit-keyframes text-focus-in
+          0%
+            -webkit-filter: blur(12px)
+            filter: blur(12px)
+            opacity: 0
+          100%
+            -webkit-filter: blur(0px)
+            filter: blur(0px)
+            opacity: 1
+        @keyframes text-focus-in
+          0%
+            -webkit-filter: blur(12px)
+            filter: blur(12px)
+            opacity: 0
+          100%
+            -webkit-filter: blur(0px)
+            filter: blur(0px)
+            opacity: 1
+      #full-slide3:checked ~ #full-slides .inner-full
+        margin-left: -200%
+        transition: 2s
+      #full-slide3:checked ~ #full-slides .full-slider-text3
+        display: block
+        @-webkit-keyframes focus-in-expand-fwd
+          0%
+            letter-spacing: -0.5em
+            -webkit-transform: translateZ(-800px)
+            transform: translateZ(-800px)
+            -webkit-filter: blur(12px)
+            filter: blur(12px)
+            opacity: 0
+          100%
+            -webkit-transform: translateZ(0)
+            transform: translateZ(0)
+            -webkit-filter: blur(0)
+            filter: blur(0)
+            opacity: 1
+        @keyframes focus-in-expand-fwd
+          0%
+            letter-spacing: -0.5em
+            -webkit-transform: translateZ(-800px)
+            transform: translateZ(-800px)
+            -webkit-filter: blur(12px)
+            filter: blur(12px)
+            opacity: 0
+          100%
+            -webkit-transform: translateZ(0)
+            transform: translateZ(0)
+            -webkit-filter: blur(0)
+            filter: blur(0)
+            opacity: 1
+      #full-slide1:checked ~ #full-commands label:nth-child(2),
+      #full-slide2:checked ~ #full-commands label:nth-child(3),
+      #full-slide3:checked ~ #full-commands label:nth-child(1)
+        background: url("../img/full-baner/pas_dark-right.png") no-repeat
+        display: block
+        position: absolute
+        background-size: cover
+        right: 0
+        top: 300%
+        bottom: 50%
+      #full-slide1:checked ~ #full-commands label:nth-child(2):active,
+      #full-slide2:checked ~ #full-commands label:nth-child(3):active,
+      #full-slide3:checked ~ #full-commands label:nth-child(1):active
+        background: url("../img/full-baner/akt_dark-right.png") no-repeat
+        display: block
+        position: absolute
+        right: 0
+        top: 300%
+        bottom: 50%
+        background-size: cover
+      #full-slide1:checked ~ #full-commands label:nth-child(3),
+      #full-slide2:checked ~ #full-commands label:nth-child(1),
+      #full-slide3:checked ~ #full-commands label:nth-child(2)
+        background: url("../img/full-baner/pas__dark-left.png") no-repeat
+        display: block
+        position: absolute
+        background-size: cover
+        left: 0
+        top: 300%
+        bottom: 50%
+      #full-slide1:checked ~ #full-commands label:nth-child(3):active,
+      #full-slide2:checked ~ #full-commands label:nth-child(1):active,
+      #full-slide3:checked ~ #full-commands label:nth-child(2):active
+        background: url("../img/full-baner/act_dark-left.png") no-repeat
+        display: block
+        position: absolute
+        left: 0
+        top: 300%
+        bottom: 50%
+        background-size: cover
+  .exclusive
+    width: 100%
+    min-height: 1110px
+    background-color: #f3f3f3
+    margin: 29% 0 0 0
+    .exclusive-wrap
+      max-width: 1170px
+      min-height: 990px
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      padding: 60px 0 35px 0
+      .left-exclusive
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        width: max-content
+        margin: 0
+        .left-exclusive-slider
+          #exclusive-slider input
+            display: none
+          #exclusive-slider
+            margin: 0 auto
+            width: 100%
+            height: 30%
+            background: #ffffff
+            text-align: center
+          #exclusive-slides
+            position: relative
+          #exclusive-container
+            width: 100%
+            overflow: hidden
+            position: relative
+            .exclusive-inner
+              max-width: 770px
+              .exclusive-getyour
+                color: #ffffff
+                font-family: $font-Merriweather
+                font-size: 14px
+                font-weight: 700
+                line-height: 21.2px
+                text-transform: uppercase
+                position: absolute
+                bottom: 49px
+                left: 316px
+              .exclusive-getyour:hover
+                color: #cf4647
+          #exclusive-slides .exclusive-inner
+            display: flex
+            width: 300%
+            line-height: 0
+          #exclusive-slides .exclusive-slider-img1
+            width: 100%
+            float: left
+          .exclusive-slider img
+            height: 430px
+            width: 100%
+          .exclusive-img1
+            position: relative
+            a
+              display: block
+          .exclusive-slider-text1
+            display: none
+            position: absolute
+            width: 60%
+            height: 30%
+            right: 21%
+            top: 27%
+            text-align: center
+            border: 1px solid rgba(255, 255, 255, 0.3)
+            padding: 51px 0 0 0
+            -webkit-animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both
+            animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both
+            .slider-text1-exclusive
+              color: #ffffff
+              font-family: $font-Cousine
+              font-size: 40px
+              font-weight: 700
+              line-height: 40.08px
+              text-transform: uppercase
+            .slider-text1-codesoffers
+              color: #ffffff
+              font-family: $font-Roboto
+              font-size: 25px
+              font-weight: 400
+              line-height: 40px
+              text-transform: uppercase
+            .exclusive-getyour
+              color: #ffffff
+              font-family: $font-Merriweather
+              font-size: 14px
+              font-weight: 700
+              line-height: 21.2px
+              text-transform: uppercase
+          .exclusive-slider-img2
+            position: relative
+            a
+              display: block
+          .exclusive-slider-text2
+            display: none
+            position: absolute
+            width: 60%
+            height: 30%
+            right: 21%
+            top: 27%
+            text-align: center
+            -webkit-animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both
+            animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both
+            .slider-text2-secret
+              color: #ffffff
+              font-family: $font-Cousine
+              font-size: 23px
+              font-weight: 400
+              line-height: 40px
+              text-transform: uppercase
+            .slider-text2-sale
+              color: #ffffff
+              font-family: $font-Cousine
+              font-size: 100px
+              font-weight: 700
+              line-height: 84.08px
+              text-transform: uppercase
+            .slider-text2-upto
+              color: #ffffff
+              font-family: $font-Merriweather
+              font-size: 30px
+              font-weight: 400
+              line-height: 40px
+              text-transform: uppercase
+              span
+                font-family: $font-ArialBlack
+                font-weight: 900
+                letter-spacing: 3.9px
+                color: #ffffff
+            .slider-text2-usecode
+              color: #ffffff
+              font-family: $font-Roboto
+              font-size: 19px
+              font-weight: 700
+              line-height: 22px
+              text-transform: uppercase
+          #exclusive-commands
+            margin: -31% 0 0 0
+            width: 100%
+            height: 50px
+            position: relative
+          #exclusive-commands label
+            width: 48px
+            height: 48px
+            opacity: 0.9
+          #exclusive-slide1:checked ~ #exclusive-slides .exclusive-inner
+            margin-left: 0
+            transition: 2s
+          #exclusive-slide1:checked ~ #exclusive-slides .exclusive-slider-text1
+            display: block
+            transition: 2s
+            @-webkit-keyframes focus-in-expand-fwd
+              0%
+                letter-spacing: -0.5em
+                -webkit-transform: translateZ(-800px)
+                transform: translateZ(-800px)
+                -webkit-filter: blur(12px)
+                filter: blur(12px)
+                opacity: 0
+              100%
+                -webkit-transform: translateZ(0)
+                transform: translateZ(0)
+                -webkit-filter: blur(0)
+                filter: blur(0)
+                opacity: 1
+            @keyframes focus-in-expand-fwd
+              0%
+                letter-spacing: -0.5em
+                -webkit-transform: translateZ(-800px)
+                transform: translateZ(-800px)
+                -webkit-filter: blur(12px)
+                filter: blur(12px)
+                opacity: 0
+              100%
+                -webkit-transform: translateZ(0)
+                transform: translateZ(0)
+                -webkit-filter: blur(0)
+                filter: blur(0)
+                opacity: 1
+          #exclusive-slide2:checked ~ #exclusive-slides .exclusive-inner
+            margin-left: -100%
+            transition: 2s
+          #exclusive-slide2:checked ~ #exclusive-slides .exclusive-slider-text2
+            display: block
+            transition: 2s
+            @-webkit-keyframes focus-in-expand-fwd
+              0%
+                letter-spacing: -0.5em
+                -webkit-transform: translateZ(-800px)
+                transform: translateZ(-800px)
+                -webkit-filter: blur(12px)
+                filter: blur(12px)
+                opacity: 0
+              100%
+                -webkit-transform: translateZ(0)
+                transform: translateZ(0)
+                -webkit-filter: blur(0)
+                filter: blur(0)
+                opacity: 1
+            @keyframes focus-in-expand-fwd
+              0%
+                letter-spacing: -0.5em
+                -webkit-transform: translateZ(-800px)
+                transform: translateZ(-800px)
+                -webkit-filter: blur(12px)
+                filter: blur(12px)
+                opacity: 0
+              100%
+                -webkit-transform: translateZ(0)
+                transform: translateZ(0)
+                -webkit-filter: blur(0)
+                filter: blur(0)
+                opacity: 1
+          #exclusive-slide3:checked ~ #exclusive-slides .exclusive-inner
+            margin-left: -200%
+            transition: 2s
+          #exclusive-slide3:checked ~ #exclusive-slides .exclusive-slider-text1
+            display: block
+            transition: 2s
+            @-webkit-keyframes focus-in-expand-fwd
+              0%
+                letter-spacing: -0.5em
+                -webkit-transform: translateZ(-800px)
+                transform: translateZ(-800px)
+                -webkit-filter: blur(12px)
+                filter: blur(12px)
+                opacity: 0
+              100%
+                -webkit-transform: translateZ(0)
+                transform: translateZ(0)
+                -webkit-filter: blur(0)
+                filter: blur(0)
+                opacity: 1
+            @keyframes focus-in-expand-fwd
+              0%
+                letter-spacing: -0.5em
+                -webkit-transform: translateZ(-800px)
+                transform: translateZ(-800px)
+                -webkit-filter: blur(12px)
+                filter: blur(12px)
+                opacity: 0
+              100%
+                -webkit-transform: translateZ(0)
+                transform: translateZ(0)
+                -webkit-filter: blur(0)
+                filter: blur(0)
+                opacity: 1
+          #exclusive-slide2:checked ~ #exclusive-slides .exclusive-inner
+            margin-left: -100%
+            transition: 2s
+          #exclusive-slide1:checked ~ #exclusive-commands label:nth-child(2),
+          #exclusive-slide2:checked ~ #exclusive-commands label:nth-child(3),
+          #exclusive-slide3:checked ~ #exclusive-commands label:nth-child(1)
+            background: url("../img/full-baner/pas_dark-right.png") no-repeat
+            display: block
+            position: absolute
+            background-size: cover
+            right: 0
+          #exclusive-slide1:checked ~ #exclusive-commands label:nth-child(2):active,
+          #exclusive-slide2:checked ~ #exclusive-commands label:nth-child(3):active,
+          #exclusive-slide3:checked ~ #exclusive-commands label:nth-child(1):active
+            background: url("../img/full-baner/akt_dark-right.png") no-repeat
+            display: block
+            position: absolute
+            right: 0
+          #exclusive-slide1:checked ~ #exclusive-commands label:nth-child(3),
+          #exclusive-slide2:checked ~ #exclusive-commands label:nth-child(1),
+          #exclusive-slide3:checked ~ #exclusive-commands label:nth-child(2)
+            background: url("../img/full-baner/pas__dark-left.png") no-repeat
+            display: block
+            position: absolute
+            background-size: cover
+            left: 0
+          #exclusive-slide1:checked ~ #exclusive-commands label:nth-child(3):active,
+          #exclusive-slide2:checked ~ #exclusive-commands label:nth-child(1):active,
+          #exclusive-slide3:checked ~ #exclusive-commands label:nth-child(2):active
+            background: url("../img/full-baner/act_dark-left.png") no-repeat
+            display: block
+            position: absolute
+            left: 0
+        .left-exclusive-bottum
+          display: flex
+          justify-content: space-between
+          margin: 29% 0 0 0
+          .exclusive-bottum-left
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            margin: 0
+            .exclusive-baner-up
+              margin: 0 0 25px 0
+              position: relative
+              .exclusive-baner-text1
+                position: absolute
+                top: 28%
+                left: 14%
+                text-align: center
+                .baner-text1-jewelry
+                  color: #ffffff
+                  font-family: $font-Merriweather
+                  font-size: 40px
+                  font-weight: 700
+                  line-height: 59px
+                  text-transform: uppercase
+                .baner-text1-every
+                  color: #ffffff
+                  font-family: $font-Roboto
+                  font-size: 23px
+                  font-weight: 700
+                  line-height: 22px
+                  text-transform: uppercase
+              .exclusive-baner-up-buynow
+                position: absolute
+                color: #ffffff
+                font-family: $font-Merriweather
+                font-size: 15px
+                font-weight: 700
+                line-height: 22px
+                text-transform: uppercase
+                bottom: 23px
+                left: 126px
+              .exclusive-baner-up-buynow:hover
+                color: #cf4647
+            .exclusive-baner-down
+              margin: 0
+              position: relative
+              max-width: 371px
+              .exclusive-baner-text2
+                position: absolute
+                top: 79px
+                left: 56px
+                text-align: center
+                .baner-text2-accessories
+                  color: #ffffff
+                  font-family: $font-Merriweather
+                  font-size: 30px
+                  font-weight: 400
+                  line-height:  58px
+                  text-transform: uppercase
+                .baner-text2-complete
+                  color: #ffffff
+                  font-family: $font-Roboto
+                  font-size: 25px
+                  font-weight: 400
+                  line-height: 22px
+                  text-transform: uppercase
+              .exclusive-baner-down-getthe
+                color: #ffffff
+                font-family: $font-Merriweather
+                font-size: 15px
+                font-weight: 700
+                line-height: 22px
+                text-transform: uppercase
+                position: relative
+                bottom: 40px
+                left: 114px
+              .exclusive-baner-down-getthe:hover
+                color: #cf4647
+          .exclusive-bottum-right
+            margin: 0
+            #bottum-right-exclusive-slider
+              input
+                display: none
+              input[type=radio]:checked + #bottum-right-exclusive-label1:before
+                content: "\2022"
+                color: #CF4647
+                font-size: 50px
+                text-align: center
+                line-height: 37%
+                padding-right: 17px
+                box-sizing: border-box
+              input[type=radio]:checked + #bottum-right-exclusive-label2:before
+                content: "\2022"
+                color: #CF4647
+                font-size: 50px
+                text-align: center
+                line-height: 37%
+                padding-right: 17px
+                box-sizing: border-box
+              input[type=radio]:checked + #bottum-right-exclusive-label3:before
+                content: "\2022"
+                color: #CF4647
+                font-size: 50px
+                text-align: center
+                line-height: 37%
+                padding-right: 17px
+                box-sizing: border-box
+              label
+                position: relative
+              #bottum-right-exclusive-label1:before
+                content: ""
+                display: inline-block
+                width: 16px
+                height: 16px
+                position: absolute
+                left: -41px
+                bottom: -500px
+                background-color: #ffffff
+                box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, .3), 0 1px 0 0 rgba(255, 255, 255, .8)
+                border-radius: 8px
+                z-index: 1
+              #bottum-right-exclusive-label2:before
+                content: ""
+                display: inline-block
+                width: 16px
+                height: 16px
+                position: absolute
+                left: -15px
+                bottom: -500px
+                background-color: #ffffff
+                box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, .3), 0 1px 0 0 rgba(255, 255, 255, .8)
+                border-radius: 8px
+                z-index: 1
+              #bottum-right-exclusive-label3:before
+                content: ""
+                display: inline-block
+                width: 16px
+                height: 16px
+                position: absolute
+                left: 12px
+                bottom: -500px
+                background-color: #ffffff
+                box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, .3), 0 1px 0 0 rgba(255, 255, 255, .8)
+                border-radius: 8px
+                z-index: 1
+            #bottum-right-exclusive-slider
+              margin: 0 auto
+              width: 100%
+              height: 30%
+              background: #ffffff
+              text-align: center
+            #bottum-right-exclusive-slides
+              position: relative
+            #bottum-right-exclusive-container
+              width: 100%
+              overflow: hidden
+              position: relative
+              .bottum-right-exclusive-inner
+                max-width: 370px
+                .bottum-right-exclusive-getyour
+                  color: #ffffff
+                  font-family: $font-Merriweather
+                  font-size: 14px
+                  font-weight: 700
+                  line-height: 21.2px
+                  text-transform: uppercase
+                  position: absolute
+                  bottom: 49px
+                  left: 316px
+                .bottum-right-exclusive-getyour:hover
+                  color: #cf4647
+            #bottum-right-exclusive-slides .bottum-right-exclusive-inner
+              display: flex
+              width: 300%
+              line-height: 0
+            #bottum-right-exclusive-slides .bottum-right-exclusive-slider-img1
+              width: 100%
+              float: left
+            .exclusive-bottum-right-text1
+              position: absolute
+              top: 185px
+              left: 85px
+              .exclusive-bottum-right-text-lookbook
+                color: #ffffff
+                font-family: $font-Roboto
+                font-size: 35px
+                font-weight: 700
+                line-height: 29px
+                text-transform: uppercase
+              .exclusive-bottum-right-text-women
+                color: #ffffff
+                font-family: $font-Cousine
+                font-size: 18px
+                font-weight: 700
+                line-height: 40px
+                text-transform: uppercase
+              .exclusive-bottum-right-text-autumn
+                color: #ffffff
+                font-family: $font-Cousine
+                font-size: 30px
+                font-weight: 700
+                line-height: 40px
+                text-transform: uppercase
+            .exclusive-bottum-right-text-getlook
+              color: #ffffff
+              font-family: $font-Merriweather
+              font-size: 15px
+              font-weight: 700
+              line-height: 22px
+              text-transform: uppercase
+              position: absolute
+              bottom: 85px
+              left: 122px
+            .exclusive-bottum-right-text-getlook:hover
+              color: #cf4647
+            #bottum-right-exclusive-slide1:checked ~ #bottum-right-exclusive-slides .bottum-right-exclusive-inner
+              margin-left: 0
+              transition: 2s
+            #bottum-right-exclusive-slide2:checked ~ #bottum-right-exclusive-slides .bottum-right-exclusive-inner
+              margin-left: -100%
+              transition: 2s
+            #bottum-right-exclusive-slide3:checked ~ #bottum-right-exclusive-slides .bottum-right-exclusive-inner
+              margin-left: -200%
+              transition: 2s
+      .right-exclusive
+        margin: 0
+        width: 32%
+        display: flex
+        flex-direction: column
+        .exclusive-long-baer
+          position: relative
+          margin-bottom: 30px
+          .long-baer-text
+            position: absolute
+            top: 23px
+            text-align: center
+            left: 74px
+            .long-baer-text-the
+              color: #2f2f2f
+              font-family: $font-Cousine
+              font-size: 18px
+              font-weight: 700
+              line-height: 40px
+            .long-baer-text-hottest
+              color: #333333
+              font-family: $font-Merriweather
+              font-size: 25px
+              font-weight: 400
+              line-height: 40px
+              text-transform: uppercase
+            .long-baer-text-are
+              color: #2f2f2f
+              font-family: $font-Roboto
+              font-size: 20px
+              font-weight: 700
+              line-height: 40px
+              text-transform: uppercase
+          .long-baer-text-watch
+            color: #ffffff
+            font-family: $font-Merriweather
+            font-size: 14px
+            font-weight: 700
+            line-height: 21.2px
+            text-transform: uppercase
+            position: absolute
+            bottom: 52px
+            left: 137px
+          .long-baer-text-watch:hover
+            color: #cf4647
+        .exclusive-litel-baner-wrap
+          display: flex
+          flex-direction: column
+          .exclusive-litel-baner
+            position: relative
+            .litel-baner-text
+              position: absolute
+              top: 115px
+              left: 92px
+              .litel-baner-text-what
+                color: #ffffff
+                font-family: $font-Roboto
+                font-size: 30px
+                font-weight: 700
+                line-height: 22px
+                text-transform: uppercase
+          .exclusive-litel-baner1
+            display: none
+            position: relative
+            margin-top: 30px
+            .litel-baner-text1
+              position: absolute
+              top: 115px
+              left: 92px
+              .litel-baner-text-what1
+                color: #ffffff
+                font-family: $font-Roboto
+                font-size: 30px
+                font-weight: 700
+                line-height: 22px
+                text-transform: uppercase
+                border: 1px solid
+  @media screen and (max-width: 1165px)
+      .exclusive,
+        .exclusive-wrap
+          .left-exclusive
+            flex-grow: 1
+            .left-exclusive-bottum
+              margin: 21% 0 0 0
+              display: flex
+              justify-content: center
+              width: 100%
+              .exclusive-bottum-left
+                margin: 0 30px 0 0
+              .exclusive-bottum-right
+                margin: 0
+          .right-exclusive
+            flex-direction: row
+            justify-content: center
+            width: 100%
+            .exclusive-long-baer
+              margin: 0 30px 0 0
+            .exclusive-litel-baner-wrap
+              justify-content: center
+              margin: 0
+              .exclusive-litel-baner1
+                display: block
+  .showcase-blok
+    background-color: #ffffff
+    width: 100%
+    .showcase-wrap
+      max-width: 1170px
+      min-height: 1504px
+      margin: 0 auto
+      text-align: center
+      #category-slider
+        input
+          display: none
+        input[type=radio]:checked + #category-label1:before
+          content: "new arrivals"
+          color: #444444
+          font-family: $font-Merriweather
+          font-size: 16px
+          font-weight: 700
+          text-transform: uppercase
+          position: absolute
+          left: -287px
+          top: 56px
+          z-index: 2
+          border-bottom: #cf4647 1px solid
+        input[type=radio]:checked + #category-label2:before
+          content: "featured"
+          color: #444444
+          font-family: $font-Merriweather
+          font-size: 16px
+          font-weight: 700
+          text-transform: uppercase
+          position: absolute
+          left: -113px
+          top: 56px
+          z-index: 2
+          border-bottom: #cf4647 1px solid
+        input[type=radio]:checked + #category-label3:before
+          content: "special"
+          color: #444444
+          font-family: $font-Merriweather
+          font-size: 16px
+          font-weight: 700
+          text-transform: uppercase
+          position: absolute
+          left: 20px
+          top: 56px
+          z-index: 2
+          border-bottom: #cf4647 1px solid
+        input[type=radio]:checked + #category-label4:before
+          content: "bestsellers"
+          color: #444444
+          font-family: $font-Merriweather
+          font-size: 16px
+          font-weight: 700
+          text-transform: uppercase
+          position: absolute
+          left: 152px
+          top: 56px
+          z-index: 2
+          border-bottom: #cf4647 1px solid
+        label
+          position: relative
+        #category-label1:before
+          content: "new arrivals"
+          color: #999999
+          font-family: $font-Merriweather
+          font-size: 16px
+          font-weight: 700
+          text-transform: uppercase
+          position: absolute
+          left: -287px
+          top: 56px
+          z-index: 1
+        #category-label2:before
+          content: "featured"
+          color: #999999
+          font-family: $font-Merriweather
+          font-size: 16px
+          font-weight: 700
+          text-transform: uppercase
+          position: absolute
+          left: -113px
+          top: 56px
+          z-index: 1
+        #category-label3:before
+          content: "special"
+          color: #999999
+          font-family: $font-Merriweather
+          font-size: 16px
+          font-weight: 700
+          text-transform: uppercase
+          position: absolute
+          left: 20px
+          top: 56px
+          z-index: 1
+        #category-label4:before
+          content: "bestsellers"
+          color: #999999
+          font-family: $font-Merriweather
+          font-size: 16px
+          font-weight: 700
+          text-transform: uppercase
+          position: absolute
+          left: 152px
+          top: 56px
+          z-index: 1
+        #category-slider
+          margin: 0 auto
+          width: 100%
+          background: #ffffff
+          text-align: center
+        #category-slides
+          position: relative
+        #category-slide-container
+          width: 100.1%
+          overflow: hidden
+          position: relative
+          min-height: 1504px
+          .category-inner
+            min-height: 1020px
+        #category-slides .category-inner
+          display: flex
+          width: 613%
+        #category-slides .category-slider-img1,.category-slider-img2,.category-slider-img3,.category-slider-img4
+          width: 100%
+          float: left
+          margin: 1.95% 8.64% 1.65% 0
+          display: flex
+          .product-cart
+            margin-left: 0
+            margin-right: 28px
+            width: 270px
+            height: 473px
+          .product-cart:nth-child(4n)
+            margin-right: 0
+          #new-arrivals-slider input, #new-special1-slider input, #featured-slider input, #bestsellers-slider input
+            display: none
+          #new-arrivals-slider, #new-special1-slider, #featured-slider, #bestsellers-slider
+            margin: 0 auto
+            width: 100%
+            background: #ffffff
+            text-align: center
+          #new-arrivals-slides, #new-special1-slides, #featured-slides, #bestsellers-slides
+            position: relative
+          #new-arrivals-container, #new-special1-container, #featured-container, #bestsellers-container
+            width: 100%
+            overflow: hidden
+            position: relative
+          #new-arrivals-slides .new-arrivals-inner, #new-special1-slides .new-special1-inner, #featured-slides .featured-inner, #bestsellers-slides .bestsellers-inner
+            display: flex
+            width: 300%
+            line-height: 0
+          .new-arrivals-slider-img1,.new-arrivals-slider-img2, .new-arrivals-slider-img3,
+          .new-special1-slider-img1,.new-special1-slider-img2, .new-special1-slider-img3, .bestsellers-slider-img1, .bestsellers-slider-img2,
+          .bestsellers-slider-img3, .featured-slider-img1, .featured-slider-img2, .featured-slider-img3
+            float: left
+            display: flex
+            flex-wrap: wrap
+            max-width: 1170px
+            margin: 1.95% 3.2px 1.65%
+            .new-product-cart
+              .product-cart-label-wrap
+                position: absolute
+                top: 6px
+                left: -3px
+                .product-cart-label-uot
+                  display: none
+                .product-cart-label-seil
+                  display: none
+                .product-cart-label-new
+                  visibility: visible
+                  position: absolute
+                  display: flex
+                  flex-direction: column
+                  justify-content: center
+                  width: 80px
+                  height: 30px
+                  border: 3px solid #524656
+                .product-cart-label-new-text
+                  color: #524656
+                  font-family: $font-ArialBoldMT
+                  font-size: 20px
+                  font-weight: 700
+                  line-height: 17px
+                  text-transform: uppercase
+            .out-product-cart
+              .product-cart-label-wrap
+                position: absolute
+                top: 6px
+                left: -3px
+                z-index: 1
+                .product-cart-label-new
+                  display: none
+                .product-cart-label-seil
+                  display: none
+                .product-cart-label-uot
+                  visibility: visible
+                  position: absolute
+                  display: flex
+                  flex-direction: column
+                  justify-content: center
+                  width: 90px
+                  height: 42px
+                  border: 3px solid #5b5555
+                  .product-cart-label-uot-text
+                    color: #5b5555
+                    font-family: $font-ArialBoldMT
+                    font-size: 17px
+                    font-weight: 900
+                    line-height: 15px
+                    text-transform: uppercase
+            .seil-product-cart
+              .product-cart-label-wrap
+                position: absolute
+                top: 6px
+                left: -3px
+                z-index: 1
+                .product-cart-label-new
+                  display: none
+                .product-cart-label-uot
+                  display: none
+                .product-cart-label-seil
+                  visibility: visible
+                  position: absolute
+                  display: flex
+                  flex-direction: column
+                  justify-content: center
+                  width: 80px
+                  height: 30px
+                  border: 3px solid #cf4647
+                  .product-cart-label-seil-text
+                    color: #cf4647
+                    font-family: $font-ArialBlack
+                    font-size: 26px
+                    font-weight: 900
+                    line-height: 17px
+            .product-cart
+              position: relative
+              margin-bottom: 11px
+              .product-cart-label-wrap
+                position: absolute
+                top: 6px
+                left: -3px
+                z-index: 0
+                visibility: hidden
+              .product-cart-color-wrap
+                display: flex
+                justify-content: space-between
+                position: absolute
+                bottom: 157px
+                left: 8px
+                box-sizing: border-box
+                .product-cart-color-choice
+                  display: block
+                  .product-cart-color-blak
+                    width: 25px
+                    height: 25px
+                    box-shadow: inset 0 0 0 2px #ffffff
+                    border: 1px solid #555555
+                    background-color: #0e0c0f
+                  .product-cart-color-blak:hover
+                    border: 3px solid #cf4647
+                  .product-cart-color-blue
+                    width: 25px
+                    height: 25px
+                    box-shadow: inset 0 0 0 2px #ffffff
+                    border: 1px solid #555555
+                    background-color: #202a4e
+                    margin: 0 10px
+                  .product-cart-color-blue:hover
+                    border: 3px solid #cf4647
+                  .product-cart-color-red
+                    width: 25px
+                    height: 25px
+                    box-shadow: inset 0 0 0 2px #ffffff
+                    border: 1px solid #555555
+                    background-color: #923349
+                  .product-cart-color-red:hover
+                    border: 3px solid #cf4647
+              .product-cart-text-block
+                margin: 0
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                box-sizing: border-box
+                padding: 19px 9px 19px
+                .product-cart-text-wrap
+                  position: relative
+                  display: flex
+                  justify-content: space-between
+                  margin: 0
+                  .product-cart-text
+                    margin: 0
+                    display: flex
+                    flex-direction: column
+                    align-items: flex-start
+                    .product-cart-text-name
+                      color: #444444
+                      font-family: $font-Merriweather
+                      font-size: 16px
+                      font-weight: 400
+                      line-height: 15px
+                    .product-cart-text-category
+                      margin: 0
+                      color: #444444
+                      font-family: $font-Merriweather
+                      font-size: 13px
+                      font-weight: 400
+                      line-height: 19px
+                    .product-cart-text-name:hover,
+                    .product-cart-text-category:hover
+                      color: #cf4647
+                  .product-cart-price
+                    margin: 0
+                    p
+                      color: #222222
+                      font-family: $font-Cousine
+                      font-size: 15px
+                      font-weight: 700
+                      line-height: 17px
+                .product-cart-button-wrap
+                  display: none
+                  flex-direction: column
+                  .product-cart-button-up
+                    width: 249px
+                    height: 34px
+                    border: 2px solid #444444
+                    background-color: #ffffff
+                    box-sizing: border-box
+                    padding: 7px 0 6px
+                    margin: 13px 0 8px
+                    display: flex
+                    .cart-button-add
+                      color: #444444
+                      font-family: $font-Merriweather
+                      font-size: 14px
+                      font-weight: 700
+                      line-height: 17px
+                      text-transform: uppercase
+                      position: relative
+                    .cart-button-add:before
+                      content: ""
+                      height: 16px
+                      border: 1px solid #444444
+                      position: absolute
+                      right: -20px
+                    .cart-button-add:hover
+                      color: #cf4647
+                    .cart-button-more
+                      color: #444444
+                      font-family: $font-Merriweather
+                      font-size: 14px
+                      font-weight: 700
+                      line-height: 17px
+                      text-transform: uppercase
+                    .cart-button-more:hover
+                      color: #cf4647
+                  .product-cart-button-down
+                    display: flex
+                    justify-content: space-between
+                    margin: 0
+                    .cart-button-wishlist
+                      color: #333333
+                      font-family: $font-Merriweather
+                      font-size: 13px
+                      font-style: italic
+                      line-height: 17px
+                      margin: 0
+                    .cart-button-wishlist:hover
+                      color: #cf4647
+                    .cart-button-compare
+                      color: #333333
+                      font-family: $font-Merriweather
+                      font-size: 13px
+                      font-style: italic
+                      line-height: 17px
+                      margin: 0
+                    .cart-button-compare:hover
+                      color: #cf4647
+            .product-cart:hover .product-cart-button-wrap
+              display: flex
+            .product-cart:hover
+              box-shadow: 2px 4px 15px 1px rgba(0, 0, 0, 0.36)
+          #new-arrivals-commands, #new-special1-commands, #featured-commands, #bestsellers-commands
+            margin: -31% 0 0 0
+            width: 100%
+            height: 50px
+            position: relative
+          #new-arrivals-commands label, #new-special1-commands label, #featured-commands label, #bestsellers-commands label
+            width: 130px
+            height: 30px
+            opacity: 0.9
+            bottom: -309px
+            left: 516px
+            color: #444444
+            font-family: $font-Merriweather
+            font-size: 14px
+            font-weight: 700
+            line-height: 17px
+            text-transform: uppercase
+            box-sizing: border-box
+            padding: 8px
+            display: none
+
+          #new-arrivals-commands label:hover,
+          #new-special1-commands label:hover,
+          #featured-commands label:hover,
+          #bestsellers-commands label:hover
+            color: #cf4647
+            border: #cf4647 1px solid
+          #new-arrivals-commands label:before,
+          #new-special1-commands label:before,
+          #featured-commands label:before,
+          #bestsellers-commands label:before
+            content: ""
+            position: absolute
+            width: 414%
+            border: #444444 1px solid
+            left: -538px
+            top: 14px
+            background-color: #444444
+          #new-arrivals-commands label:hover:before,
+          #new-special1-commands label:hover:before,
+          #featured-commands label:hover:before,
+          #bestsellers-commands label:hover:before
+            background-color: #cf4647
+            border: #cf4647 1px solid
+          #new-arrivals-commands label:after,
+          #new-special1-commands label:after,
+          #featured-commands label:after,
+          #bestsellers-commands label:after
+            content: ""
+            position: absolute
+            width: 414%
+            border: #444444 1px solid
+            right: -538px
+            top: 14px
+            background-color: #444444
+          #new-arrivals-commands label:hover:after,
+          #new-special1-commands label:hover:after,
+          #featured-commands label:hover:after,
+          #bestsellers-commands label:hover:after
+            background-color: #cf4647
+            border: #cf4647 1px solid
+          #new-arrivals-slide1:checked ~ #new-arrivals-slides .new-arrivals-inner
+              margin-left: 0
+              transition: 2s
+          #new-arrivals-slide2:checked ~ #new-arrivals-slides .new-arrivals-inner
+            margin-left: -100%
+            transition: 2s
+          #new-arrivals-slide3:checked ~ #new-arrivals-slides .new-arrivals-inner
+            margin-left: -200%
+            transition: 2s
+          #new-arrivals-slide1:checked ~ #new-arrivals-commands label:nth-child(2),
+          #new-arrivals-slide2:checked ~ #new-arrivals-commands label:nth-child(3),
+          #new-arrivals-slide3:checked ~ #new-arrivals-commands label:nth-child(1)
+            bottom: -309px
+            left: 516px
+            display: block
+            position: absolute
+
+          #new-special1-slide1:checked ~ #new-special1-slides .new-special1-inner
+            margin-left: 0
+            transition: 2s
+          #new-special1-slide2:checked ~ #new-special1-slides .new-special1-inner
+            margin-left: -100%
+            transition: 2s
+          #new-special1-slide3:checked ~ #new-special1-slides .new-special1-inner
+            margin-left: -200%
+            transition: 2s
+          #new-special1-slide1:checked ~ #new-special1-commands label:nth-child(2),
+          #new-special1-slide2:checked ~ #new-special1-commands label:nth-child(3),
+          #new-special1-slide3:checked ~ #new-special1-commands label:nth-child(1)
+            bottom: -309px
+            left: 541px
+            display: block
+            position: absolute
+          #featured-slide1:checked ~ #featured-slides .featured-inner
+              margin-left: 0
+              transition: 2s
+          #featured-slide2:checked ~ #featured-slides .featured-inner
+            margin-left: -100%
+            transition: 2s
+          #featured-slide3:checked ~ #featured-slides .featured-inner
+            margin-left: -200%
+            transition: 2s
+          #featured-slide1:checked ~ #featured-commands label:nth-child(2),
+          #featured-slide2:checked ~ #featured-commands label:nth-child(3),
+          #featured-slide3:checked ~ #featured-commands label:nth-child(1)
+            bottom: -309px
+            left: 541px
+            display: block
+            position: absolute
+          #bestsellers-slide1:checked ~ #bestsellers-slides .bestsellers-inner
+            margin-left: 0
+            transition: 2s
+          #bestsellers-slide2:checked ~ #bestsellers-slides .bestsellers-inner
+            margin-left: -100%
+            transition: 2s
+          #bestsellers-slide3:checked ~ #bestsellers-slides .bestsellers-inner
+            margin-left: -200%
+            transition: 2s
+          #bestsellers-slide1:checked ~ #bestsellers-commands label:nth-child(2),
+          #bestsellers-slide2:checked ~ #bestsellers-commands label:nth-child(3),
+          #bestsellers-slide3:checked ~ #bestsellers-commands label:nth-child(1)
+            bottom: -309px
+            left: 541px
+            display: block
+            position: absolute
+        #category-slide1:checked ~ #category-slides .category-inner
+          margin-left: 0
+          transition: 2s
+        #category-slide2:checked ~ #category-slides .category-inner
+          margin-left: -153.3%
+          transition: 2s
+        #category-slide3:checked ~ #category-slides .category-inner
+          margin-left: -306.6%
+          transition: 2s
+        #category-slide4:checked ~ #category-slides .category-inner
+          margin-left: -459.8%
+          transition: 2s
+
+
+
+  footer
+
+    width: 100%
+    border: #cf4647 1px solid
+    height: 100px
+    background: black
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

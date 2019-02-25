@@ -1,0 +1,727 @@
+{
+  "product": [
+    {
+      "id_product": "women_1",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "woman",
+      "price": 456
+    },
+    {
+      "id_product": "women_2",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "woman",
+      "price": 456
+    },
+    {
+      "id_product": "women_3",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "woman",
+      "price": 456
+    },
+    {
+      "id_product": "women_4",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "woman",
+      "price": 456
+    },
+    {
+      "id_product": "women_5",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "woman",
+      "price": 456
+    },
+    {
+      "id_product": "women_6",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "woman",
+      "price": 456
+    },
+    {
+      "id_product": "women_7",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "yellow",
+      "sesoy": "winter",
+      "category": "woman",
+      "price": 456
+    },
+    {
+      "id_product": "women_8",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "yellow",
+      "sesoy": "winter",
+      "category": "woman",
+      "price": 456
+    },
+    {
+      "id_product": "women_9",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "yellow",
+      "sesoy": "winter",
+      "category": "woman",
+      "price": 456
+    },
+    {
+      "id_product": "women_10",
+      "product_name": "Куртка",
+      "size": "XL",
+      "color": "yellow",
+      "sesoy": "winter",
+      "category": "woman",
+      "price": 456
+    },
+    {
+      "id_product": "women_11",
+      "product_name": "Куртка",
+      "size": "XL",
+      "color": "yellow",
+      "sesoy": "winter",
+      "category": "woman",
+      "price": 456
+    },
+    {
+      "id_product": "women_12",
+      "product_name": "Куртка",
+      "size": "XL",
+      "color": "yellow",
+      "sesoy": "winter",
+      "category": "woman",
+      "price": 456
+    },
+    {
+      "id_product": "women_13",
+      "product_name": "Куртка",
+      "size": "XL",
+      "color": "yellow",
+      "sesoy": "winter",
+      "category": "woman",
+      "price": 456
+    },
+    {
+      "id_product": "women_14",
+      "product_name": "Куртка",
+      "size": "XL",
+      "color": "yellow",
+      "sesoy": "winter",
+      "category": "woman",
+      "price": 456
+    },
+    {
+      "id_product": "women_15",
+      "product_name": "Куртка",
+      "size": "XL",
+      "color": "yellow",
+      "sesoy": "winter",
+      "category": "woman",
+      "price": 456
+    },
+    {
+      "id_product": "women_16",
+      "product_name": "Куртка",
+      "size": "XL",
+      "color": "yellow",
+      "sesoy": "winter",
+      "category": "woman",
+      "price": 456
+    },
+    {
+      "id_product": "women_17",
+      "product_name": "Куртка",
+      "size": "XL",
+      "color": "yellow",
+      "sesoy": "winter",
+      "category": "woman",
+
+      "price": 456
+    },
+    {
+      "id_product": "women_18",
+      "product_name": "Куртка",
+      "size": "XL",
+      "color": "green",
+      "sesoy": "winter",
+      "category": "woman",
+      "price": 456
+    },
+    {
+      "id_product": "women_19",
+      "product_name": "Куртка",
+      "size": "XL",
+      "color": "green",
+      "sesoy": "winter",
+      "category": "woman",
+      "price": 456
+    },
+    {
+      "id_product": "women_20",
+      "product_name": "Куртка",
+      "size": "L",
+      "color": "green",
+      "sesoy": "winter",
+      "category": "woman",
+      "price": 456
+    },
+    {
+      "id_product": "man_1",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "man",
+      "price": 456
+    },
+    {
+      "id_product": "man_2",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "man",
+      "price": 456
+    },
+    {
+      "id_product": "man_3",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "man",
+      "price": 456
+    },
+    {
+      "id_product": "man_4",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "man",
+      "price": 456
+    },
+    {
+      "id_product": "man_5",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "man",
+      "price": 456
+    },
+    {
+      "id_product": "man_6",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "man",
+      "price": 456
+    },
+    {
+      "id_product": "man_7",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "man",
+      "price": 456
+    },
+    {
+      "id_product": "man_8",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "man",
+      "price": 456
+    },
+    {
+      "id_product": "man_9",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "man",
+      "price": 456
+    },
+    {
+      "id_product": "man_10",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "man",
+      "price": 456
+    },
+    {
+      "id_product": "man_11",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "man",
+      "price": 456
+    },
+    {
+      "id_product": "man_12",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "man",
+      "price": 456
+    },
+    {
+      "id_product": "man_13",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "man",
+      "price": 456
+    },
+    {
+      "id_product": "man_14",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "man",
+      "price": 456
+    },
+    {
+      "id_product": "man_15",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "man",
+      "price": 456
+    },
+    {
+      "id_product": "man_16",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "man",
+      "price": 456
+    },
+    {
+      "id_product": "man_17",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "man",
+      "price": 456
+    },
+    {
+      "id_product": "man_18",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "man",
+      "price": 456
+    },
+    {
+      "id_product": "man_19",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "man",
+      "price": 456
+    },
+    {
+      "id_product": "man_20",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "man",
+      "price": 456
+    },
+    {
+      "id_product": "kids_1",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "kids",
+      "price": 456
+    },
+    {
+      "id_product": "kids_2",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "kids",
+      "price": 456
+    },
+    {
+      "id_product": "kids_3",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "kids",
+      "price": 456
+    },
+    {
+      "id_product": "kids_4",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "kids",
+      "price": 456
+    },
+    {
+      "id_product": "kids_5",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "kids",
+      "price": 456
+    },
+    {
+      "id_product": "kids_6",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "kids",
+      "price": 456
+    },
+    {
+      "id_product": "kids_7",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "kids",
+      "price": 456
+    },
+    {
+      "id_product": "kids_8",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "kids",
+      "price": 456
+    },
+    {
+      "id_product": "kids_9",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "kids",
+      "price": 456
+    },
+    {
+      "id_product": "kids_10",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "kids",
+      "price": 456
+    },
+    {
+      "id_product": "kids_11",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "kids",
+      "price": 456
+    },
+    {
+      "id_product": "kids_12",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "kids",
+      "price": 456
+    },
+    {
+      "id_product": "kids_13",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "kids",
+      "price": 456
+    },
+    {
+      "id_product": "kids_14",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "kids",
+      "price": 456
+    },
+    {
+      "id_product": "kids_15",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "kids",
+      "price": 456
+    },
+    {
+      "id_product": "kids_16",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "kids",
+      "price": 456
+    },
+    {
+      "id_product": "kids_17",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "kids",
+      "price": 456
+    },
+    {
+      "id_product": "kids_18",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "kids",
+      "price": 456
+    },
+    {
+      "id_product": "kids_19",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "kids",
+      "price": 456
+    },
+    {
+      "id_product": "kids_20",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "kids",
+      "price": 456
+    },
+    {
+      "id_product": "accessories_1",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "accessories",
+      "price": 456
+    },
+    {
+      "id_product": "accessories_2",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "accessories",
+      "price": 456
+    },
+    {
+      "id_product": "accessories_3",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "accessories",
+      "price": 456
+    },
+    {
+      "id_product": "accessories_4",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "accessories",
+      "price": 456
+    },
+    {
+      "id_product": "accessories_5",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "accessories",
+      "price": 456
+    },
+    {
+      "id_product": "accessories_6",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "accessories",
+      "price": 456
+    },
+    {
+      "id_product": "accessories_7",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "accessories",
+      "price": 456
+    },
+    {
+      "id_product": "accessories_8",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "accessories",
+      "price": 456
+    },
+    {
+      "id_product": "accessories_9",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "accessories",
+      "price": 456
+    },
+    {
+      "id_product": "accessories_10",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "accessories",
+      "price": 456
+    },
+    {
+      "id_product": "accessories_11",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "accessories",
+      "price": 456
+    },
+    {
+      "id_product": "accessories_12",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "accessories",
+      "price": 456
+    },
+    {
+      "id_product": "accessories_13",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "accessories",
+      "price": 456
+    },
+    {
+      "id_product": "accessories_14",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "accessories",
+      "price": 456
+    },
+    {
+      "id_product": "accessories_15",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "accessories",
+      "price": 456
+    },
+    {
+      "id_product": "accessories_16",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "accessories",
+      "price": 456
+    },
+    {
+      "id_product": "accessories_17",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "accessories",
+      "price": 456
+    },
+    {
+      "id_product": "accessories_18",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "accessories",
+      "price": 456
+    },
+    {
+      "id_product": "accessories_19",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "accessories",
+      "price": 456
+    },
+    {
+      "id_product": "accessories_20",
+      "product_name": "Куртка",
+      "size": "XXL",
+      "color": "red",
+      "sesoy": "winter",
+      "category": "accessories",
+      "price": 456
+    }
+
+
+  ]
+}
